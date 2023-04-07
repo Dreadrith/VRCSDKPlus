@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
   push:
     branches: main
-    paths: com.dreadscripts.selectionhelper/**
+    paths: com.dreadscripts.vrcsdkplus/**
 
 env:
-  packageName: "com.dreadscripts.selectionhelper"
-  packageDisplayName: "SelectionHelper"
+  packageName: "com.dreadscripts.vrcsdkplus"
+  packageDisplayName: "VRCSDK+"
 
 permissions:
   contents: write
