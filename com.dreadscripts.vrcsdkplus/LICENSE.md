@@ -1,0 +1,5 @@
+/* Copyright (C) Dreadrith - All Rights Reserved
+ * Proprietary and confidential
+ * You may not Reverse engineer, decompile, disassemble, or translate, or make any attempt to discover the source code of the Product.
+ * Written by Dreadrith#3238 <dreadscripts@gmail.com> , August 2020
+ */
