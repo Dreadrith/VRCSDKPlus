@@ -1,4 +1,4 @@
-Made by Dreadrith#3238
+Made by @Dreadrith
 Discord: https://discord.gg/ZsPfrGn
 Github: https://github.com/Dreadrith/DreadScripts
 Gumroad: https://gumroad.com/dreadrith

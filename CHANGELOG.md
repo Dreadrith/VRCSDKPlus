@@ -1,3 +1,7 @@
+## [1.3.5] - 2023-11-30
+### Fixed
+- Fixed the VPM structure of the package
+
 ## [1.3.4] - 2023-04-02
 ### Fixed
 - Fixed a code issue that used exponentially more performance the more ex parameters you have

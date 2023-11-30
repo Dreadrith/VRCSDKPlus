@@ -5,8 +5,8 @@
     "url": "https://github.com/Dreadrith"
   },
   "name": "com.dreadscripts.vrcsdkplus",
-  "displayName": "DreadTools - VRCSDK+",
-  "version": "1.3.4",
+  "displayName": "DreadScripts - VRCSDK+",
+  "version": "1.3.5",
   "description": "Overrides the VRCSDK Menu & Expression Parameters Editors to provide better functionality and quality of life features.",
   "keywords": [
   "Dreadrith",
@@ -18,7 +18,7 @@
   ],
   "gitDependencies": {},
   "vpmDependencies": {
-    "com.vrchat.avatars": "^3.1.0"
+    "com.vrchat.avatars": "^3.0.0"
   },
   "legacyFolders": {},
   "legacyFiles": {},
