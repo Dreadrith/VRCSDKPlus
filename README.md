@@ -9,7 +9,7 @@ VRCSDK+ does not modify the VRCSDK in any way.
 VRCSDK+ does not require a VRC+ subscription.
 You can revert to original editors using the conext menu on the respective component/object.
 
-VRCSDK+ will override or add to VRCSDK editors to provide better functionality and quality of life features.
+VRCSDK+ is an alternative to VRCSDK expression menu and parameters editors that provides better functionality and quality of life features.
 
 VRCSDK+ currently provides the following:
 

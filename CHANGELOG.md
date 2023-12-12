@@ -1,3 +1,12 @@
+(v1.4.0)
+--------
+- [Feature] Double clicking a submenu control will now switch to that submenu
+- [Improvement] Decent performance boost to parameters editor.
+- [Fix] Fixed compatibility with 2022 SDK
+- [Fix] Fixed merged parameters editing the source parameters
+- [UI] Buttons will now change cursor
+- [Misc] Changelog will follow the same format as my other scripts from here on.
+
 ## [1.3.5] - 2023-11-30
 ### Fixed
 - Fixed the VPM structure of the package
