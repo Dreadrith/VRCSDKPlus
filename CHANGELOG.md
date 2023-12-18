@@ -1,3 +1,17 @@
+(v1.5.0)
+--------
+- [Feature] Added Keyboard commands (shortcuts) and context menus (right click) to Parameters and Menu Editors
+	- Parameter editor can now handle Ctrl+D and 'DEL' for Duplicate and Delete respectively.
+	- Menu editor can now handle Ctrl+C, Ctrl+X, Ctrl+V, Ctrl+D, and 'DEL' for Copy, Cut, Paste, Duplicate and Delete respectively.
+- [Improvement] Parameters and Controls now have a 'smart increment' to them. (@buddy)
+	- Newly added parameters will be unique by appending/incrementing numbers.
+	- Duplicated control's name will count up if it has a number.
+	- Duplicated control's parameter name will count up if it's a bool and has a number (Disabled when holding shift).
+	- Duplicated control's parameter value will count up if it's an int (Disabled when holding shift).
+- [Improvement] Submenus created through editor will use the control name instead of the parent menu name. (@m1s0)
+- [Fix] Fixed parameter editor rendering when unity is not in fullscreen.
+- [Misc] Added unity version to package.json to suppress VCC warning about the version.
+
 (v1.4.0)
 --------
 - [Feature] Double clicking a submenu control will now switch to that submenu
