@@ -797,7 +797,7 @@ namespace DreadScripts.VRCSDKPlus
                     c.FindPropertyRelative("subMenu").objectReferenceValue = null;
                     c.FindPropertyRelative("labels").ClearArray();
                     c.FindPropertyRelative("subParameters").ClearArray();
-                    c.FindPropertyRelative("value").floatValue = 0;
+                    c.FindPropertyRelative("value").floatValue = 1;
                 };
                 _controlsList.drawHeaderCallback = rect =>
                 {
