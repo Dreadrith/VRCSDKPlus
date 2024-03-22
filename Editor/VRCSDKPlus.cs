@@ -873,11 +873,11 @@ namespace DreadScripts.VRCSDKPlus
                         if (GUI.Button(pasteRect, VRCSDKPlusToolbox.GUIContent.Paste, GUI.skin.label))
                         {
                             var menu = new GenericMenu();
-                            menu.AddItem(new GUIContent("Paste values"), false, isEmpty || !hasFocus ? null : () => PasteControl(index, false));
+                            menu.AddItem(new GUIContent("Paste values"), false, isEmpty || !hasFocus ? (GenericMenu.MenuFunction)null : () => PasteControl(index, false));
                             menu.AddItem(
                                 new GUIContent("Insert as new"),
                                 false,
-                                isFull ? null : () => PasteControl(index, true)
+                                isFull ? (GenericMenu.MenuFunction)null : () => PasteControl(index, true)
                             );
                             menu.ShowAsContext();
                         }
