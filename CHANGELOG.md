@@ -1,3 +1,9 @@
+(v1.5.1)
+--------
+- [Misc] Changed license to GPL-3.0 and shared the source code.
+- [Fix] Fixed pasting or moving a control into an empty menu throwing an error
+- [Fix/Misc] New controls' values will now be set to 1 by default like original VRC does.
+
 (v1.5.0)
 --------
 - [Feature] Added Keyboard commands (shortcuts) and context menus (right click) to Parameters and Menu Editors
