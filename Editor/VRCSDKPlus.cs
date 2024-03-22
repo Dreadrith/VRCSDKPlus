@@ -1179,8 +1179,18 @@ namespace DreadScripts.VRCSDKPlus
                         EditorGUIUtility.systemCopyBuffer.Substring(VRCSDKPlusToolbox.Strings.ClipboardPrefixControl.Length));
 
                     Undo.RecordObject(target, "Insert control as new");
-                    _lastMenu.controls.Insert(index + 1, newControl);
-                    _controlsList.index = index + 1;
+                    if (_lastMenu.controls.Count <= 0)
+                    {
+                        _lastMenu.controls.Add(newControl);
+                        _controlsList.index = 0;
+                    }
+                    else
+                    {
+                        var insertIndex = index + 1;
+                        if (insertIndex < 0) insertIndex = 0;
+                        _lastMenu.controls.Insert(insertIndex, newControl);
+                        _controlsList.index = insertIndex;
+                    }
                     EditorUtility.SetDirty(_lastMenu);
                 }
             }
@@ -1238,8 +1248,15 @@ namespace DreadScripts.VRCSDKPlus
                     Undo.RecordObject(target, "Move control");
                     Undo.RecordObject(moveSourceMenu, "Move control");
 
-                    _lastMenu.controls.Insert(index + 1, moveTargetControl);
-                    moveSourceMenu.controls.Remove(moveTargetControl);
+                    if (_lastMenu.controls.Count <= 0)
+                        _lastMenu.controls.Add(moveTargetControl);
+                    else 
+                    {
+                        var insertIndex = index + 1;
+                        if (insertIndex < 0) insertIndex = 0;
+                        _lastMenu.controls.Insert(insertIndex, moveTargetControl);
+                        moveSourceMenu.controls.Remove(moveTargetControl);
+                    }
 
                     EditorUtility.SetDirty(moveSourceMenu);
                     EditorUtility.SetDirty(target);
